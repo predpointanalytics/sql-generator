@@ -2,11 +2,12 @@ import express, {Application, Request, Response} from 'express'
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
+
 const PORT : number = 8000
 
-// const API_KEY : string = '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'
-const API_KEY = process.env.API_KEY
 
+const API_KEY : string = process.env.REACT_APP_API_KEY || ''
+console.log('akey',process.env.REACT_APP_API_KEY)
 
 
 const app: Application = express()
