@@ -1,6 +1,10 @@
 import React from 'react'
 
-const CodeDisplay = ()=> {
+interface CodeDisplayProp{
+  text: string
+}
+
+const CodeDisplay = ({text}:CodeDisplayProp)=> {
   return (
     <div className='code-display'>
         <div className='buttons'>
@@ -9,7 +13,7 @@ const CodeDisplay = ()=> {
             <button className='button last'></button>
         </div>
         <div className='code-output'>
-            <p></p>
+            <p>{text}</p>
         </div>
     </div>
   )
