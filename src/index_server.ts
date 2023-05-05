@@ -5,7 +5,7 @@ import { Configuration, OpenAIApi } from 'openai'
 const PORT : number = 8000
 
 // const API_KEY : string = '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'
-const API_KEY : string = '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'
+const API_KEY = process.env.API_KEY
 
 
 
