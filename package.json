@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start-front": "react-scripts start",
-    "start-back": "ts-node --esm ./src/index.ts",
+    "start-back": "ts-node --esm ./src/index_server.ts",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

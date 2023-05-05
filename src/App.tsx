@@ -9,7 +9,7 @@ const App = ()=> {
       const options ={
         method: 'POST',
         headers: {
-          'content-type': 'application/json'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify({
           message: 'create a table'
